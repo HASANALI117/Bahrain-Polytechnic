@@ -99,3 +99,10 @@ button:hover {
   background: #ff8c8c;
   text-decoration: none;
 }
+
+/* Form Styles */
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
