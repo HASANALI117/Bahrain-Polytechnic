@@ -102,11 +102,11 @@ button:hover {
 
 /* Form Styles */
 .container {
-  margin: 3rem 0;
-  display: flex;
-  justify-content: center;
-  /* width: 100%; */
-  /* border: 1px solid black; */
+  margin: 3rem;
+  display: inline-flex;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 2rem;
+  background-color: gray;
 }
 
 /* form container */
@@ -118,7 +118,6 @@ button:hover {
   justify-content: center;
   max-width: 20rem;
   width: 100%;
-  background-color: white;
   text-align: center;
   margin: 0 2rem;
 }
@@ -141,8 +140,8 @@ button:hover {
 }
 .input-group input {
   margin: 0.5rem auto;
-  width: 100%;
-  padding: 0.4rem 0;
+  width: 19rem;
+  padding: 0.4rem;
   border: 1px solid black;
   border-radius: 0.3rem;
 }
@@ -168,7 +167,7 @@ button:hover {
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 50rem;
-  width: 100%;
+  width: 50rem;
   height: 40rem;
 }
 /* .image-cover {
