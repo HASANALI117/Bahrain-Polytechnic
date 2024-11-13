@@ -204,3 +204,7 @@ button:hover {
   height: 100%;
   border-radius: 1rem;
 } */
+
+#message-container {
+  background-color: white;
+}
