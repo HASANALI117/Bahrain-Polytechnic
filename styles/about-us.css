@@ -1,14 +1,17 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
 }
 
 .content {
-  background: no-repeat center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/img-1.jpg");
+  background: url("../images/img-1.jpg") no-repeat center;
   background-size: cover;
+}
+.dark-bg {
+  background-color: rgba(0, 0, 0, 0.5);
   height: 100vh;
+  width: 100%;
 }
 
 /*  NAVBAR */
@@ -43,64 +46,58 @@ nav {
   font-size: 1.1rem;
   color: white;
   font-weight: 600;
-  transition: background-color 0.3s;
 }
 .labels a:hover {
   background-color: #ed5757;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
 }
 
 /* BANNER */
 #banner {
+  /* background: url("../images/img-1.jpg") no-repeat center;
+    background-size: cover; */
   color: white;
   height: 40rem;
-  margin-top: 2rem;
 }
 
 .banner-content {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   flex-wrap: wrap;
   height: 100%;
-  width: 100%;
+  width: 30%;
   padding: 0 4rem;
-  text-align: center;
 }
 
 .banner-content h1 {
-  font-weight: 600;
+  font-weight: 900;
   font-size: 4rem;
-  margin: 1rem;
-  /* font-family: "Roboto Condensed", sans-serif; */
-  font-family: "Funnel Display", sans-serif;
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
 .banner-content p {
-  /* padding: 1rem 0; */
-  margin: 1rem 0 2rem 0;
-}
-
-.banner-content button {
-  margin: 2rem;
+  padding: 1rem 0;
 }
 
 button {
-  background: transparent;
-  border: 2px solid white;
+  background: #ed5757;
+  border-radius: 0.5rem;
   color: white;
   font-size: 1rem;
   font-weight: 700;
   padding: 1.5rem 2rem;
   text-decoration: none;
+  border: 0;
   margin: 1rem 0;
-  transition: background-color 0.3s, color 0.3s;
 }
 
 button:hover {
-  background-color: #ed5757;
-  color: white;
+  background: #ff8c8c;
   text-decoration: none;
 }
 
@@ -110,7 +107,7 @@ button:hover {
   display: inline-flex;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   border-radius: 2rem;
-  /* background-color: gray; */
+  background-color: gray;
 }
 
 /* form container */
@@ -144,16 +141,10 @@ button:hover {
 }
 .input-group input {
   margin: 0.5rem auto;
-  width: 100%;
+  width: 19rem;
   padding: 0.4rem;
   border: 1px solid black;
   border-radius: 0.3rem;
-  box-sizing: border-box;
-}
-
-.input-group input:focus {
-  outline: none;
-  box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
 }
 
 .submit-button {
@@ -168,25 +159,130 @@ button:hover {
 }
 
 /* image container */
-.image-container {
+/* .image-container {
   border-radius: 2rem;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  /* border: 1px solid black; */
   background-image: url("../images/register.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 50rem;
   width: 50rem;
   height: 40rem;
-}
-/* .image-cover {
-  background-color: rgba(255, 117, 117, 0.5);
-  width: 100%;
-  height: 100%;
-  border-radius: 1rem;
 } */
+/* .image-cover {
+    background-color: rgba(255, 117, 117, 0.5);
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+  } */
 
-#message-container {
-  background-color: white;
+.image-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.campus-image {
+  width: 90%;
+  max-width: 800px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.navbar {
+  background-color: #333;
+  color: #ff7373;
+  padding: 1rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #ff7373;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.logo img {
+  height: 3rem;
+  width: 3rem;
+  margin-right: 0.5rem;
+}
+
+.labels a {
+  padding: 0 1.5rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 600;
+}
+
+.labels a:hover {
+  background-color: #ed5757;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.content-section {
+  padding: 3rem 6rem;
+}
+
+.content-section.dark-bg {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.text-content {
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.campus-image {
+  width: 90%;
+  max-width: 800px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 1rem 0;
+  color: #ff7373;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #ff7373;
+  text-align: center;
+  margin-top: 0;
+}
+
+p {
+  line-height: 1.6;
+  margin: 1rem 0;
+}
+
+a {
+  color: #ff7373;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }

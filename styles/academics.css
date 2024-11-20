@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  padding: 1rem;
+}
+
+nav a {
+  font-size: 1.2rem;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #eb4040;
+}
+
+#mid-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+#content {
+  max-width: 800px;
+  text-align: left;
+}
+
+#content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#content h3 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+#content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.programmes h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.slider {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 100%;
+  height: 35rem;
+  object-fit: cover;
+}
+
+.slide-content {
+  padding: 1rem;
+  background-color: white;
+  text-align: center;
+}
+
+.slide h4 {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+  color: red;
+}
+
+.slide p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 1rem;
+  min-width: 250px;
+}
+
+.footer-section h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section a {
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section .socials a {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.footer-section .socials img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-bottom {
+  background-color: #222;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
