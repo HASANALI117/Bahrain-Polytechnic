@@ -4,22 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Bahrain-Polytechnic</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Lobster&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+      integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- StyleSheets -->
+    <link rel="stylesheet" href="../styles/styles.css" />
     <link rel="stylesheet" href="../styles/about-us.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="logo">
-        <img src="../images/logo.png" alt="Bahrain Polytechnic Logo" />
-        <span>Bahrain Polytechnic</span>
+    <nav class="nav-subpage">
+      <div class="nav-content">
+        <div class="logo">
+          <img src="../images/logo-3.png" alt="logo" />
+          <h1>Bahrain Polytechnic</h1>
+        </div>
+
+        <div class="nav-links">
+          <a href="../index.html">Home</a>
+          <a href="./about-us.html">About</a>
+          <a href="./academics.html">Academics</a>
+          <a href="./admission.html">Admission</a>
+          <a href="./contact.html">Contact</a>
+          <a href="./making-site.html">Making of site</a>
+          <a href="./our-story.html">Our Story</a>
+          <a id="first-name"></a>
+        </div>
       </div>
-      <div class="labels">
-        <a href="#about">About</a>
-        <a href="#vision">Vision</a>
-        <a href="#programs">Programs</a>
-        <a href="#facilities">Facilities</a>
-        <a href="#student-life">Student Life</a>
-        <a href="#contact">Contact</a>
-      </div>
+      <h2>About Us</h2>
     </nav>
 
     <section class="content-section dark-bg" id="about">
@@ -42,6 +68,66 @@
         />
       </div>
     </section>
+
+    <div class="vision">
+      <div class="vision-card">
+        <div class="vision-card-inner">
+          <div class="vision-card-front">
+            <p>Our Vision</p>
+          </div>
+          <div class="vision-card-back">
+            <p>
+              To become a leading institution for applied learning and
+              innovation, positively influencing the future of education and
+              industry.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="vision-card">
+        <div class="vision-card-inner">
+          <div class="vision-card-front">
+            <p>Our Mission</p>
+          </div>
+          <div class="vision-card-back">
+            <p>
+              Bahrain Polytechnic is committed to developing graduates with
+              professional skills and knowledge aligned with current industry
+              needs, enhancing their employability and fostering a robust labor
+              market.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="vision-card">
+        <div class="vision-card-inner">
+          <div class="vision-card-front">
+            <p>Our Values</p>
+          </div>
+          <div class="vision-card-back">
+            <p>
+              We prioritize integrity, innovation, respect, and excellence,
+              fostering a culture of continuous learning and ethical
+              responsibility in all we do.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="vision-card">
+        <div class="vision-card-inner">
+          <div class="vision-card-front">
+            <p>Our Goals</p>
+          </div>
+          <div class="vision-card-back">
+            <p>
+              To provide students with a dynamic and engaging learning
+              environment that fosters critical thinking, problem-solving, and
+              practical skills.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <section id="vision" class="content-section">
       <div class="text-content">
@@ -126,16 +212,18 @@
       </div>
     </section>
 
-    <section id="contact" class="content-section">
-      <div class="text-content">
-        <h2>Contact Us</h2>
-        <p><strong>Location:</strong> Isa Town, Bahrain</p>
-        <p><strong>Phone:</strong> +973 1789 7000</p>
-        <p>
-          <strong>Email:</strong>
-          <a href="mailto:info@polytechnic.bh">info@polytechnic.bh</a>
-        </p>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="socials">
+          <a href="#"> <i class="fa-solid fa-envelope"></i> Email</a>
+          <a href="#"> <i class="fa-solid fa-phone"></i> Phone</a>
+          <a href="#"> <i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+          <a href="#"> <i class="fa-brands fa-instagram"></i> Instagram</a>
+        </div>
       </div>
-    </section>
+
+      <div class="footer-bottom">&copy; 2023 Bahrain Polytechnic</div>
+    </footer>
   </body>
 </html>

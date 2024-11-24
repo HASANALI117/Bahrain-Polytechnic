@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Lobster&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+      integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- StyleSheets -->
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/contact.css" />
+  </head>
+  <body>
+    <nav class="nav-subpage">
+      <div class="nav-content">
+        <div class="logo">
+          <img src="../images/logo-3.png" alt="logo" />
+          <h1>Bahrain Polytechnic</h1>
+        </div>
+
+        <div class="nav-links">
+          <a href="../index.html">Home</a>
+          <a href="./about-us.html">About</a>
+          <a href="./academics.html">Academics</a>
+          <a href="./admission.html">Admission</a>
+          <a href="./contact.html">Contact</a>
+          <a href="./making-site.html">Making of site</a>
+          <a href="./our-story.html">Our Story</a>
+          <a id="first-name"></a>
+        </div>
+      </div>
+      <h2>Contact</h2>
+    </nav>
+
+    <!-- CONTACT US -->
+    <div class="contact" id="contact">
+      <div class="contact-details">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+          <i class="fa-solid fa-envelope"></i>
+          <h3>info@polytechnic.bh</h3>
+        </div>
+        <div class="contact-info">
+          <i class="fa-solid fa-phone"></i>
+          <h3>177771121</h3>
+        </div>
+        <div class="contact-info">
+          <i class="fa-solid fa-location-dot"></i>
+          <h3>PO Box 33349, Isa Town</h3>
+        </div>
+      </div>
+
+      <div>
+        <div class="container">
+          <div class="form-container">
+            <h2>Register your Details</h2>
+
+            <form action="#" method="POST">
+              <div class="input-group">
+                <label for="fname">First Name</label>
+                <input id="fname" name="fname" type="text" required />
+              </div>
+
+              <div class="input-group">
+                <label for="lname">Last Name</label>
+                <input id="lname" name="lname" type="text" required />
+              </div>
+              <div class="input-group">
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email" required />
+              </div>
+
+              <div class="input-group">
+                <label for="mobile">Mobile No.</label>
+                <input id="mobile" name="mobile" type="tel" required />
+              </div>
+
+              <button type="submit" class="submit-button" id="submit-button">
+                Register
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="socials">
+          <a href="#"> <i class="fa-solid fa-envelope"></i> Email</a>
+          <a href="#"> <i class="fa-solid fa-phone"></i> Phone</a>
+          <a href="#"> <i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+          <a href="#"> <i class="fa-brands fa-instagram"></i> Instagram</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">&copy; 2023 Bahrain Polytechnic</div>
+    </footer>
+  </body>
+</html>

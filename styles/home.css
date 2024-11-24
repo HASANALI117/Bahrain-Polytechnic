@@ -1,0 +1,202 @@
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+}
+.logo {
+  color: #ff4545;
+}
+.logo img {
+  filter: brightness(0) saturate(100%) invert(39%) sepia(94%) saturate(7467%)
+    hue-rotate(353deg) brightness(101%) contrast(101%);
+}
+
+.content {
+  background: no-repeat center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/home/img-1.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+/* BANNER */
+#banner {
+  color: white;
+  height: 40rem;
+  margin-top: 2rem;
+}
+
+.banner-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.banner-content h1 {
+  font-weight: 600;
+  font-size: 4rem;
+  margin: 1rem;
+  /* font-family: "Roboto Condensed", sans-serif; */
+  font-family: "Funnel Display", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.banner-content p {
+  /* padding: 1rem 0; */
+  margin: 1rem 0 2rem 0;
+}
+
+.banner-content button {
+  margin: 2rem;
+}
+
+/* Why Us Section */
+#why-us-section {
+  text-align: center;
+  margin: 7rem auto;
+  padding: 2rem;
+  background-color: #f4f4f9;
+}
+
+.why-us-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  justify-content: center;
+}
+
+.why-us-card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 27rem;
+  width: 27rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.why-us-card:hover {
+  transform: scale(1.07);
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  /* padding: 1rem; */
+  text-align: center;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7rem;
+  font-weight: bold;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.why-us-card:hover .card-content {
+  opacity: 1;
+}
+
+/* Teachers Section */
+#teachers-section {
+  text-align: center;
+  margin: 7rem auto;
+  padding: 2rem 0;
+  background-color: #f4f4f9;
+}
+
+.teachers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 20rem;
+}
+.teacher-card {
+  border-radius: 0.5rem;
+  padding: 1rem 2.5rem;
+  width: 25%;
+}
+
+.teacher-img {
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+/* Form styles */
+.contact {
+  /* height: 30rem; */
+  margin: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.contact-info i {
+  padding: 1rem;
+}
+.container {
+  margin: 1rem 5rem;
+  text-align: center;
+}
+
+.input-group {
+  margin-top: 1rem;
+}
+
+.input-group label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+.input-group input {
+  margin: 0.5rem auto;
+  width: 35rem;
+  padding: 0.4rem;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  box-sizing: border-box;
+}
+.input-group input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+.submit-button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  background-color: #ff4545;
+}
+
+.submit-button:hover {
+  background-color: #ee8989;
+  color: white;
+  text-decoration: none;
+}
+#message-container {
+  background-color: white;
+}

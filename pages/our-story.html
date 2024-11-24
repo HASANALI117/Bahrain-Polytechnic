@@ -4,94 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our Story - Bahrain Polytechnic</title>
-    <style>
-      body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: #add8e6;
-        color: #333;
-      }
 
-      header {
-        background: #333;
-        color: #fff;
-        padding: 1rem 0;
-        text-align: center;
-      }
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Lobster&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
 
-      .labels {
-        text-align: center;
-        padding: 1rem 0;
-      }
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+      integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-      .labels a {
-        margin: 0 1rem;
-        text-decoration: none;
-        color: #333;
-      }
-
-      .container {
-        max-width: 800px;
-        margin: 2rem auto;
-        padding: 2rem;
-        background: #fff;
-        border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        display: flex;
-        align-items: center;
-      }
-
-      .image-container {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      img {
-        max-width: 80%;
-        height: auto;
-        border-radius: 8px;
-      }
-
-      .text-container {
-        flex: 2;
-        padding-left: 2rem;
-      }
-
-      h1 {
-        font-size: 2.5rem;
-        margin-top: 0;
-      }
-
-      h2 {
-        font-size: 1.75rem;
-        margin-top: 1.5rem;
-        color: #555;
-      }
-
-      p {
-        line-height: 1.6;
-        margin: 1rem 0;
-      }
-
-      footer {
-        text-align: center;
-        padding: 1rem 0;
-        background: #333;
-        color: #fff;
-        position: relative;
-        bottom: 0;
-        width: 100%;
-      }
-    </style>
+    <!-- StyleSheets -->
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/our-story.css" />
   </head>
   <body>
+    <nav class="nav-subpage">
+      <div class="nav-content">
+        <div class="logo">
+          <img src="../images/logo-3.png" alt="logo" />
+          <h1>Bahrain Polytechnic</h1>
+        </div>
+
+        <div class="nav-links">
+          <a href="../index.html">Home</a>
+          <a href="./about-us.html">About</a>
+          <a href="./academics.html">Academics</a>
+          <a href="./admission.html">Admission</a>
+          <a href="./contact.html">Contact</a>
+          <a href="./making-site.html">Making of site</a>
+          <a href="./our-story.html">Our Story</a>
+          <a id="first-name"></a>
+        </div>
+      </div>
+      <h2>Our Story</h2>
+    </nav>
+
     <header>
       <h1>Our Story</h1>
     </header>
 
-    <div class="labels">
+    <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="pages/about-us.html">About Us</a>
       <a href="pages/academics.html">Academics</a>
@@ -155,8 +116,18 @@
       </div>
     </div>
 
+    <!-- Footer -->
     <footer>
-      <p>&copy; 2024 Bahrain Polytechnic. All rights reserved.</p>
+      <div class="footer-content">
+        <div class="socials">
+          <a href="#"> <i class="fa-solid fa-envelope"></i> Email</a>
+          <a href="#"> <i class="fa-solid fa-phone"></i> Phone</a>
+          <a href="#"> <i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+          <a href="#"> <i class="fa-brands fa-instagram"></i> Instagram</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">&copy; 2023 Bahrain Polytechnic</div>
     </footer>
   </body>
 </html>

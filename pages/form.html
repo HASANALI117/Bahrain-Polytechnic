@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/form.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <div class="form-content">
+          <div class="logo">
+            <img src="images/logo-3.png" alt="logo" />
+          </div>
+          <h2>Register your Details</h2>
+          <!-- <p class="subtitle">
+              Not a member?
+              <a href="#">Start a 14 day free trial</a>
+            </p> -->
+        </div>
+
+        <form action="#" method="POST">
+          <div class="input-group">
+            <label for="fname">First Name</label>
+            <input id="fname" name="fname" type="text" required />
+          </div>
+
+          <div class="input-group">
+            <label for="lname">Last Name</label>
+            <input id="lname" name="lname" type="text" required />
+          </div>
+          <div class="input-group">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+
+          <div class="input-group">
+            <label for="mobile">Mobile No.</label>
+            <input id="mobile" name="mobile" type="tel" required />
+          </div>
+
+          <button type="submit" class="submit-button" id="submit-button">
+            Register
+          </button>
+        </form>
+      </div>
+
+      <div class="image-container">
+        <div class="image-cover"></div>
+      </div>
+    </div>
+    <div id="message-container"></div>
+  </body>
+</html>

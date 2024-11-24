@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bahrain-Polytechnic</title>
 
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon" />
+
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,25 +15,39 @@
       rel="stylesheet"
     />
 
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+      integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- StyleSheets -->
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/home.css" />
   </head>
   <body>
+    <!-- NAV + TOP-SECTION -->
     <div class="content">
       <nav>
-        <div class="logo">
-          <img src="images/logo-3.png" alt="logo" />
-          <h1>Bahrain Polytechnic</h1>
-        </div>
+        <div class="nav-content">
+          <div class="logo">
+            <img src="images/logo-3.png" alt="logo" />
+            <h1>Bahrain Polytechnic</h1>
+          </div>
 
-        <div class="labels">
-          <a href="index.html">Home</a>
-          <a href="pages/about-us.html">About</a>
-          <a href="pages/academics.html">Academics</a>
-          <a href="pages/admission.html">Admission</a>
-          <a href="pages/making-site.html">Making of site</a>
-          <a href="pages/our-story.html">Our Story</a>
-          <a id="first-name"></a>
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="pages/about-us.html">About</a>
+            <a href="pages/academics.html">Academics</a>
+            <a href="pages/admission.html">Admission</a>
+            <a href="pages/contact.html">Contact</a>
+            <a href="pages/making-site.html">Making of site</a>
+            <a href="pages/our-story.html">Our Story</a>
+            <a id="first-name"></a>
+          </div>
         </div>
       </nav>
 
@@ -43,56 +59,181 @@
             dolorum dicta eius ducimus. <br />
             Nobis, dicta quisquam doloremque sed
           </p>
-          <button>GET STARTED NOW</button>
+          <a href="#contact"><button>GET STARTED NOW</button></a>
         </div>
       </div>
     </div>
 
-    <div class="container">
-      <div class="form-container">
-        <div class="form-content">
-          <div class="logo">
-            <img src="images/logo-3.png" alt="logo" />
+    <!-- MID-SECTION -->
+    <div id="why-us-section">
+      <h2>Why Us?</h2>
+      <div class="why-us-cards">
+        <div
+          class="why-us-card"
+          style="background-image: url('images/home/education.jpg')"
+        >
+          <div class="card-content">
+            <p>Quality Education</p>
           </div>
+        </div>
+        <div
+          class="why-us-card"
+          style="background-image: url('images/home/group.jpg')"
+        >
+          <div class="card-content">
+            <p>Experienced Faculty</p>
+          </div>
+        </div>
+        <div
+          class="why-us-card"
+          style="background-image: url('images/home/class.jpg')"
+        >
+          <div class="card-content">
+            <p>Modern Facilities</p>
+          </div>
+        </div>
+        <div
+          class="why-us-card"
+          style="background-image: url('images/home/05-01.jpg')"
+        >
+          <div class="card-content">
+            <p>Industry Connections</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Teachers-SECTION -->
+    <div id="teachers-section">
+      <h2>MEET THE TEACHERS</h2>
+      <div class="teachers">
+        <div class="teacher-card">
+          <img
+            src="images/home/teacher-1.jpg"
+            alt="teacher-1"
+            class="teacher-img"
+          />
+          <h3>Teacher Name</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+            pariatur cumque est culpa
+          </p>
+        </div>
+
+        <div class="teacher-card">
+          <img
+            src="images/home/teacher-2.jpg"
+            alt="teacher-1"
+            class="teacher-img"
+          />
+          <h3>Teacher Name</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+            pariatur cumque est culpa
+          </p>
+        </div>
+
+        <div class="teacher-card">
+          <img
+            src="images/home/teacher-3.jpg"
+            alt="teacher-1"
+            class="teacher-img"
+          />
+          <h3>Teacher Name</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+            pariatur cumque est culpa
+          </p>
+        </div>
+
+        <div class="teacher-card">
+          <img
+            src="images/home/teacher-4.jpg"
+            alt="teacher-1"
+            class="teacher-img"
+          />
+          <h3>Teacher Name</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+            pariatur cumque est culpa
+          </p>
+        </div>
+
+        <div class="teacher-card">
+          <img
+            src="images/home/teacher-5.jpg"
+            alt="teacher-1"
+            class="teacher-img"
+          />
+          <h3>Teacher Name</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+            pariatur cumque est culpa
+          </p>
+        </div>
+
+        <div class="teacher-card">
+          <img
+            src="images/home/teacher-6.jpg"
+            alt="teacher-1"
+            class="teacher-img"
+          />
+          <h3>Teacher Name</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+            pariatur cumque est culpa
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT US -->
+    <div class="contact" id="contact">
+      <div class="container">
+        <div class="form-container">
           <h2>Register your Details</h2>
-          <!-- <p class="subtitle">
-            Not a member?
-            <a href="#">Start a 14 day free trial</a>
-          </p> -->
+
+          <form action="#" method="POST">
+            <div class="input-group">
+              <label for="fname">First Name</label>
+              <input id="fname" name="fname" type="text" required />
+            </div>
+
+            <div class="input-group">
+              <label for="lname">Last Name</label>
+              <input id="lname" name="lname" type="text" required />
+            </div>
+            <div class="input-group">
+              <label for="email">Email address</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+
+            <div class="input-group">
+              <label for="mobile">Mobile No.</label>
+              <input id="mobile" name="mobile" type="tel" required />
+            </div>
+
+            <button type="submit" class="submit-button" id="submit-button">
+              Register
+            </button>
+          </form>
         </div>
-
-        <form action="#" method="POST">
-          <div class="input-group">
-            <label for="fname">First Name</label>
-            <input id="fname" name="fname" type="text" required />
-          </div>
-
-          <div class="input-group">
-            <label for="lname">Last Name</label>
-            <input id="lname" name="lname" type="text" required />
-          </div>
-          <div class="input-group">
-            <label for="email">Email address</label>
-            <input id="email" name="email" type="email" required />
-          </div>
-
-          <div class="input-group">
-            <label for="mobile">Mobile No.</label>
-            <input id="mobile" name="mobile" type="tel" required />
-          </div>
-
-          <button type="submit" class="submit-button" id="submit-button">
-            Register
-          </button>
-        </form>
-      </div>
-
-      <div class="image-container">
-        <div class="image-cover"></div>
       </div>
     </div>
-    <div id="message-container"></div>
 
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="socials">
+          <a href="#"> <i class="fa-solid fa-envelope"></i> Email</a>
+          <a href="#"> <i class="fa-solid fa-phone"></i> Phone</a>
+          <a href="#"> <i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+          <a href="#"> <i class="fa-brands fa-instagram"></i> Instagram</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">&copy; 2023 Bahrain Polytechnic</div>
+    </footer>
     <script src="scripts/index.js"></script>
   </body>
 </html>
