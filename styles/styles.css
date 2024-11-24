@@ -36,16 +36,20 @@ nav h2 {
   text-align: center;
   font-size: 2.7rem;
   color: white;
-  padding: 2rem 0;
+  margin-top: 7rem;
 }
 
-.nav-subpage {
-  /* background: no-repeat;
+.nav-subheader {
+  background: no-repeat;
   background-position: bottom;
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/img-2.jpg"); */
-  background-color: #c62e2e;
+  background-image: linear-gradient(
+      rgba(144, 15, 15, 0.7),
+      rgba(144, 15, 15, 0.7)
+    ),
+    url("../images/register.jpg");
+  height: 50vh;
+  /* background-color: #c62e2e; */
 }
 
 .nav-content {

@@ -177,6 +177,12 @@ p {
   width: 10rem;
   object-fit: cover;
   margin-bottom: 1rem;
+  border: 3px solid #f4f4f9;
+  transition: 0.5s;
+}
+
+.teacher-col img:hover {
+  border: 3px solid red;
 }
 
 /* Testimonials */
