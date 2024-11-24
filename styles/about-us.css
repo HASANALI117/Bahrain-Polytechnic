@@ -1,16 +1,27 @@
+/* -------- About us --------*/
+.about {
+  text-align: left;
+}
+.about p {
+  padding: 1rem 0;
+}
+.about img {
+  float: right;
+  height: 20rem;
+  width: 30rem;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+}
+/* -------- Vision Cards --------*/
 .vision {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  padding: 10rem 0;
 }
 
 .vision-card {
   background-color: transparent;
   height: 30rem;
-  width: 20rem;
-  margin: 1rem;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  width: 28rem;
+  perspective: 1000px;
 }
 
 .vision-card-inner {
@@ -36,45 +47,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .vision-card-front {
-  background-color: gray;
+  background-color: #f95454;
+}
+
+.vision-card-front h3 {
+  font-size: 2rem;
+  font-weight: 600;
   color: white;
 }
 
 .vision-card-back {
-  background-color: #1e1e1e;
-  color: white;
+  background-color: #c62e2e;
   transform: rotateY(180deg);
 }
 
-.content-section {
-  padding: 3rem 6rem;
-}
-
-.content-section.dark-bg {
-  background-color: #1e1e1e;
+.vision-card-back p {
   color: white;
-}
-
-.text-content {
-  max-width: 800px;
-  margin: auto;
-  padding: 1rem;
-}
-
-.image-container {
-  display: flex;
-  justify-content: center;
-  padding: 2rem 0;
-}
-
-.campus-image {
-  width: 90%;
-  max-width: 800px;
-  border-radius: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.5;
+  padding: 5rem;
+  text-align: left;
 }
