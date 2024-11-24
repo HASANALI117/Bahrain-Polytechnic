@@ -1,21 +1,13 @@
-let currentSlide = 0;
+const sliderTrack = document.querySelector(".slider-track");
+const sliderCards = document.querySelectorAll(".card");
 
-function showSlide(index) {
-  const slides = document.querySelectorAll(".slide");
-  if (index >= slides.length) {
-    currentSlide = 0;
-  } else if (index < 0) {
-    currentSlide = slides.length - 1;
-  } else {
-    currentSlide = index;
-  }
-  const offset = -currentSlide * 100;
-  document.querySelector(".slides").style.transform = `translateX(${offset}%)`;
-}
+// Duplicate cards to enable smooth infinite scroll
+sliderCards.forEach((card) => {
+  const clone = card.cloneNode(true);
+  sliderTrack.appendChild(clone);
+});
 
-function moveSlide(direction) {
-  showSlide(currentSlide + direction);
-}
-
-// Initialize the slider
-showSlide(currentSlide);
+// Add event listener to reset the scroll position when animation completes
+sliderTrack.addEventListener("animationiteration", () => {
+  sliderTrack.style.transform = "translateX(0)";
+});

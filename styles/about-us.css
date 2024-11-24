@@ -11,6 +11,7 @@
   width: 30rem;
   border-radius: 0.5rem;
   margin-left: 1rem;
+  object-fit: cover;
 }
 /* -------- Vision Cards --------*/
 .vision {
@@ -51,7 +52,15 @@
 }
 
 .vision-card-front {
-  background-color: #f95454;
+  /* background-color: #f95454; */
+  background: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(144, 15, 15, 0.6),
+      rgba(144, 15, 15, 0.6)
+    ),
+    url("../images/bg-2.JPG");
 }
 
 .vision-card-front h3 {
