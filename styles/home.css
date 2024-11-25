@@ -1,6 +1,8 @@
 /*-------- Navbar --------*/
 .logo {
-  color: #ff4545;
+  /* color: #ff4545; */
+  filter: brightness(0) saturate(100%) invert(39%) sepia(94%) saturate(7467%)
+    hue-rotate(353deg) brightness(101%) contrast(101%);
 }
 .logo img {
   filter: brightness(0) saturate(100%) invert(39%) sepia(94%) saturate(7467%)
