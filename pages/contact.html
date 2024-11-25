@@ -47,57 +47,96 @@
           <a id="first-name"></a>
         </div>
       </div>
-      <h2>Contact</h2>
+      <h2>Contact Us</h2>
     </nav>
 
-    <!-- CONTACT US -->
-    <div class="contact" id="contact">
-      <div class="contact-details">
-        <h2>Contact Us</h2>
-        <div class="contact-info">
-          <i class="fa-solid fa-envelope"></i>
-          <h3>info@polytechnic.bh</h3>
-        </div>
-        <div class="contact-info">
-          <i class="fa-solid fa-phone"></i>
-          <h3>177771121</h3>
-        </div>
-        <div class="contact-info">
-          <i class="fa-solid fa-location-dot"></i>
-          <h3>PO Box 33349, Isa Town</h3>
-        </div>
+    <!-- Map -->
+    <div class="map section">
+      <div class="sub-title">
+        <h2>Directions</h2>
+        <p>
+          Choose from a range of programmes tailored to meet your career goals
+          and aspirations.
+        </p>
       </div>
 
-      <div>
-        <div class="container">
-          <div class="form-container">
-            <h2>Register your Details</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14323.796340410177!2d50.5465105!3d26.1657876!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa9456a2084cbbe49!2sBahrain+Polytechnic!5e0!3m2!1sen!2sbh!4v1552988035262"
+        frameborder="0"
+      ></iframe>
+    </div>
 
-            <form action="#" method="POST">
-              <div class="input-group">
-                <label for="fname">First Name</label>
-                <input id="fname" name="fname" type="text" required />
-              </div>
-
-              <div class="input-group">
-                <label for="lname">Last Name</label>
-                <input id="lname" name="lname" type="text" required />
-              </div>
-              <div class="input-group">
-                <label for="email">Email address</label>
-                <input id="email" name="email" type="email" required />
-              </div>
-
-              <div class="input-group">
-                <label for="mobile">Mobile No.</label>
-                <input id="mobile" name="mobile" type="tel" required />
-              </div>
-
-              <button type="submit" class="submit-button" id="submit-button">
-                Register
-              </button>
-            </form>
+    <!-- CONTACT US -->
+    <div class="contact section">
+      <div class="row">
+        <div class="contact-details">
+          <div class="sub-title">
+            <h2>Contact Us</h2>
+            <p>
+              Choose from a range of programmes tailored to meet your career
+              goals and aspirations.
+            </p>
           </div>
+
+          <div class="contact-info">
+            <i class="fa-solid fa-envelope"></i>
+            <h3>info@polytechnic.bh</h3>
+          </div>
+
+          <div class="contact-info">
+            <i class="fa-solid fa-phone"></i>
+            <h3>177771121</h3>
+          </div>
+
+          <div class="contact-info">
+            <i class="fa-solid fa-clock"></i>
+            <h3>Sunday to Thursday 8.00am – 5.00pm</h3>
+          </div>
+
+          <div class="contact-info">
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>Isa Town, Kingdom of Bahrain</h3>
+          </div>
+        </div>
+
+        <div>
+          <div class="sub-title">
+            <h2>Send Us A Message</h2>
+            <p>
+              Choose from a range of programmes tailored to meet your career
+              goals and aspirations.
+            </p>
+          </div>
+
+          <form action="#" method="POST">
+            <div class="input-group">
+              <label for="fname">First Name <span>*</span></label>
+              <input id="fname" name="fname" type="text" required />
+            </div>
+
+            <div class="input-group">
+              <label for="lname">Last Name <span>*</span></label>
+              <input id="lname" name="lname" type="text" required />
+            </div>
+            <div class="input-group">
+              <label for="email">Email address <span>*</span></label>
+              <input id="email" name="email" type="email" required />
+            </div>
+
+            <div class="input-group">
+              <label for="mobile">Mobile No. <span>*</span></label>
+              <input id="mobile" name="mobile" type="tel" required />
+            </div>
+
+            <div class="input-group">
+              <label for="message">Message <span>*</span></label>
+              <textarea name="message" id="message"></textarea>
+            </div>
+
+            <button type="submit" class="submit-button" id="submit-button">
+              Register
+            </button>
+          </form>
         </div>
       </div>
     </div>

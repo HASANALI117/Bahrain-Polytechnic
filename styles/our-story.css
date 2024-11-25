@@ -1,0 +1,14 @@
+.report-section p {
+  text-align: left;
+  line-height: 30px;
+}
+
+.report {
+  text-align: left;
+}
+.report p {
+  padding: 0;
+}
+.report h2 {
+  padding: 1rem 0;
+}
