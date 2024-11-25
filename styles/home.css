@@ -91,10 +91,16 @@
 .programmes {
 }
 
+.programmes a {
+  text-decoration: none;
+  color: black;
+}
+
 .program-col {
   background-color: #f6d6d6;
   border-radius: 0.5rem;
   width: 20rem;
+  height: 17rem;
   padding: 2rem;
   transition: 0.5s;
 }
