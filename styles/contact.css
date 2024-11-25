@@ -14,12 +14,13 @@
   display: flex;
   justify-content: left;
   align-items: center;
-  padding: 0 8rem 4rem 8rem;
+  padding-bottom: 4rem;
   font-size: 1.5rem;
 }
 .contact-info i {
-  padding: 0 1.5rem;
+  padding-right: 1.5rem;
   font-size: 2rem;
+  width: 2rem;
 }
 
 .input-group {
