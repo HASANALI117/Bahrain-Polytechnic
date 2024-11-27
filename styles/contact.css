@@ -86,3 +86,14 @@
   color: white;
   text-decoration: none;
 }
+
+@media (max-width: 700px) {
+  .contact-info {
+    padding-bottom: 2rem;
+    font-size: 0.9rem;
+  }
+  .contact-info i {
+    padding-right: 1rem;
+    font-size: 1.5rem;
+  }
+}

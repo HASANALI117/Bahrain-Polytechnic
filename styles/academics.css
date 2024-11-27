@@ -62,3 +62,21 @@
     transform: translateX(-100%);
   }
 }
+
+@media (max-width: 700px) {
+  .teaching {
+    text-align: center;
+  }
+  .teaching p {
+    padding: 1rem 0;
+  }
+  .teaching img {
+    height: 20rem;
+    width: 100%;
+    margin: 3rem auto;
+  }
+
+  .slider-track {
+    animation: scroll 10s linear infinite;
+  }
+}
