@@ -22,8 +22,6 @@ The website provides information about Bahrain Polytechnic University, including
 
 You can view the live website on GitHub Pages: [Bahrain Polytechnic Website](https://hasanali117.github.io/Bahrain-Polytechnic/index.html)
 
-## Homepage Screenshot
-
 ## Features
 
 - Home page with an overview of the university
@@ -43,9 +41,6 @@ You can view the live website on GitHub Pages: [Bahrain Polytechnic Website](htt
 
 ```
 .
-├── .gitignore
-├── .vscode/
-│   └── settings.json
 ├── images/
 │   ├── academics/
 │   └── home/
