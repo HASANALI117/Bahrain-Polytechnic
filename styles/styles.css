@@ -138,11 +138,13 @@ nav h2 {
   display: none;
   font-size: 2rem;
   cursor: pointer;
+  color: white;
 }
 .fa-x {
   display: none;
   font-size: 2rem;
   cursor: pointer;
+  color: white;
 }
 
 /* -------- Footer -------- */
@@ -177,8 +179,16 @@ footer {
 
 /* Small screens (mobile devices, 480px and up) */
 @media (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+  }
+
   nav {
     padding: 0;
+  }
+
+  .nav-subheader {
+    background-position: right;
   }
 
   .nav-links {
@@ -189,7 +199,7 @@ footer {
     right: -100%;
     background-color: #ed5757;
     height: 100vh;
-    width: 100%;
+    width: 70%;
     transition: right 1s;
   }
 
