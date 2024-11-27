@@ -59,7 +59,8 @@ button:hover {
 
 /* -------- NAVBAR -------- */
 nav {
-  padding: 0.5em 6rem;
+  padding: 0.5rem 6rem;
+  position: relative;
 }
 nav a {
   text-decoration: none;
@@ -122,14 +123,26 @@ nav h2 {
 .nav-links a::after {
   content: "";
   width: 0%;
-  height: 2px;
+  height: 4px;
   background: white;
+  border-radius: 0.5rem;
   display: block;
   margin: auto;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 .nav-links a:hover::after {
   width: 100%;
+}
+
+.fa-bars {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.fa-x {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 /* -------- Footer -------- */
@@ -160,4 +173,54 @@ footer {
 }
 .footer-bottom {
   padding: 0.5rem;
+}
+
+/* Small screens (mobile devices, 480px and up) */
+@media (max-width: 700px) {
+  nav {
+    padding: 0;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: start;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    background-color: #ed5757;
+    height: 100vh;
+    width: 100%;
+    transition: right 1s;
+  }
+
+  .nav-links.show {
+    right: 0;
+  }
+
+  .nav-links a {
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 600;
+  }
+  .logo h1 {
+    display: none;
+  }
+
+  .fa-bars {
+    display: block;
+    padding: 0 2rem;
+  }
+
+  .fa-x {
+    display: block;
+    padding: 3rem 2rem;
+    align-self: end;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
 }

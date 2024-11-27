@@ -9,6 +9,10 @@
     hue-rotate(353deg) brightness(101%) contrast(101%);
 }
 
+.nav-links a::after {
+  background: red;
+}
+
 /*-------- Banner --------*/
 .banner {
   height: 100vh;
@@ -236,4 +240,56 @@
   background-color: #ee8989;
   color: white;
   text-decoration: none;
+}
+
+/* Small screens (mobile devices, 480px and up) */
+@media (max-width: 700px) {
+  .nav-links a::after {
+    background: white;
+  }
+
+  .banner h1 {
+    font-size: 2.5rem;
+  }
+  .banner-content {
+    padding: 1rem;
+  }
+
+  .why-us-card {
+    height: 20rem;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .card:hover {
+    transform: scale(1.01);
+  }
+
+  .program-col {
+    width: 80%;
+    height: 20rem;
+    margin-top: 2rem;
+  }
+
+  .facilities-col {
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  .teacher-col {
+    padding: 0;
+    margin-top: 3rem;
+    width: 100%;
+  }
+
+  .testimonial-col {
+    width: 80%;
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+  .testimonial-col img {
+    height: 4rem;
+    width: 4rem;
+    margin: 1rem 0;
+  }
 }

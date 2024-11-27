@@ -42,16 +42,29 @@ button.addEventListener("click", (e) => {
 });
 
 // Slider
-const sliderTrack = document.querySelector(".slider-track");
-const sliderCards = document.querySelectorAll(".card");
+// const sliderTrack = document.querySelector(".slider-track");
+// const sliderCards = document.querySelectorAll(".card");
 
-// Duplicate cards to enable smooth infinite scroll
-sliderCards.forEach((card) => {
-  const clone = card.cloneNode(true);
-  sliderTrack.appendChild(clone);
+// // Duplicate cards to enable smooth infinite scroll
+// sliderCards.forEach((card) => {
+//   const clone = card.cloneNode(true);
+//   sliderTrack.appendChild(clone);
+// });
+
+// // Add event listener to reset the scroll position when animation completes
+// sliderTrack.addEventListener("animationiteration", () => {
+//   sliderTrack.style.transform = "translateX(0)";
+// });
+
+// Navbar
+const navLinks = document.getElementById("nav-links");
+const menuButton = document.querySelector(".fa-bars");
+const closeButton = document.querySelector(".fa-x");
+
+menuButton.addEventListener("click", () => {
+  navLinks.classList.add("show");
 });
 
-// Add event listener to reset the scroll position when animation completes
-sliderTrack.addEventListener("animationiteration", () => {
-  sliderTrack.style.transform = "translateX(0)";
+closeButton.addEventListener("click", () => {
+  navLinks.classList.remove("show");
 });
