@@ -143,10 +143,14 @@
 .teachers {
 }
 
+.teacher-row {
+  justify-content: center;
+}
+
 .teacher-col {
   border-radius: 0.5rem;
-  padding: 1rem 2rem;
-  width: 50%;
+  margin: 1rem 3rem;
+  width: 16rem;
 }
 
 .teacher-col p {
@@ -164,6 +168,9 @@
 
 .teacher-col img:hover {
   border: 3px solid red;
+}
+.teacher-col img:hover ~ h3 {
+  color: red;
 }
 
 /* Testimonials */
