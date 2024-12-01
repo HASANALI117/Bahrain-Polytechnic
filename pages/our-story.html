@@ -54,266 +54,178 @@
     </nav>
 
     <!-- Reflection Report -->
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Our Story - Bahrain Polytechnic</title>
+    <div class="report section">
+      <div class="sub-title">
+        <h2>Critical Reflection</h2>
+        <p>
+          This section reflects on the work we have completed for this project,
+          the challenges encountered, and the valuable lessons learned during
+          the process of creating a website for Bahrain Polytechnic.
+        </p>
+      </div>
 
-        <!-- GOOGLE FONTS -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Lobster&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap"
-          rel="stylesheet"
-        />
+      <!-- Summary of Work -->
+      <div class="reflection-section">
+        <h2>Summary of the Work Completed for This Project</h2>
+        <p>
+          The development of this website was a collaborative effort among five
+          team members, each bringing a unique set of skills and
+          responsibilities to the project. Our main objective was to create a
+          functional, aesthetically pleasing, and user-friendly website to
+          showcase Bahrain Polytechnic. The site includes various sections such
+          as the homepage, About Us, Academics, Contact, and Our Story, designed
+          to provide a comprehensive overview of the institution's offerings and
+          values.
+        </p>
 
-        <!-- Font Awesome Icons -->
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
-          integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
-          crossorigin="anonymous"
-          referrerpolicy="no-referrer"
-        />
+        <br />
 
-        <!-- StyleSheets -->
-        <link rel="stylesheet" href="../styles/styles.css" />
-        <link rel="stylesheet" href="../styles/our-story.css" />
-      </head>
-      <body>
-        <nav class="nav-subheader">
-          <div class="nav-content">
-            <a href="../index.html"
-              ><div class="logo">
-                <img src="../images/logo-3.png" alt="logo" />
-                <h1>Bahrain Polytechnic</h1>
-              </div></a
-            >
+        <p>
+          We began by establishing a clear vision and a detailed plan for the
+          project. Each member was assigned specific tasks: one took the lead on
+          the overall design and layout, ensuring a cohesive visual identity for
+          the website. Another focused on structuring the HTML to create a solid
+          foundation, while a third member handled CSS styling to bring the
+          design to life. The fourth team member integrated JavaScript
+          functionality, adding interactivity and enhancing user engagement.
+          Lastly, the fifth member concentrated on ensuring the website’s
+          responsiveness and cross-browser compatibility, a critical aspect for
+          modern web development.
+        </p>
+        <p>
+          The project involved multiple stages, including brainstorming,
+          research, design, coding, testing, and refinement. As we progressed,
+          we maintained close communication and regularly reviewed our work to
+          ensure alignment with our objectives. The final result was a fully
+          functional website that highlights Bahrain Polytechnic's mission,
+          vision, academic programs, and contact information, providing an
+          engaging experience for users.
+        </p>
+      </div>
 
-            <div class="nav-links" id="nav-links">
-              <i class="fa-solid fa-x" id="close-btn"></i>
+      <!-- Challenges Faced -->
+      <div class="reflection-section">
+        <h2>Challenges Faced and How They Were Overcome</h2>
+        <p>
+          Like any significant project, our journey was not without its
+          challenges. One of the most pressing issues we faced was ensuring the
+          website’s responsiveness across a wide range of devices and screen
+          sizes. With users accessing websites from smartphones, tablets,
+          laptops, and desktops, it was essential to create a layout that adapts
+          seamlessly to different resolutions. To address this, we employed CSS
+          Flexbox and media queries, which allowed us to create flexible and
+          responsive designs. Rigorous testing on multiple devices and browsers
+          ensured a consistent user experience.
+        </p>
 
-              <a href="../index.html">Home</a>
-              <a href="./about-us.html">About</a>
-              <a href="./academics.html">Academics</a>
-              <a href="./contact.html">Contact</a>
-              <a href="./making-site.html">Making of site</a>
-              <a href="./our-story.html">Our Story</a>
-              <a id="first-name"></a>
-            </div>
+        <br />
 
-            <i class="fa-solid fa-bars" id="menu-btn"></i>
-          </div>
-          <h2>Our Story</h2>
-        </nav>
+        <p>
+          Another challenge was integrating external resources such as Google
+          Fonts and Font Awesome. While these tools significantly enhanced the
+          visual appeal of the website, we initially struggled with linking them
+          correctly and ensuring that they did not negatively impact
+          performance. By carefully placing resource links in the `head` section
+          and verifying their integrity policies, we successfully incorporated
+          these elements while maintaining optimal load times.
+        </p>
 
-        <!-- Reflection Report -->
-        <div class="report section">
-          <div class="sub-title">
-            <h2>Critical Reflection</h2>
-            <p>
-              This section reflects on the work we have completed for this
-              project, the challenges encountered, and the valuable lessons
-              learned during the process of creating a website for Bahrain
-              Polytechnic.
-            </p>
-          </div>
+        <br />
 
-          <!-- Summary of Work -->
-          <div class="reflection-section">
-            <h2>Summary of the Work Completed for This Project</h2>
-            <p>
-              The development of this website was a collaborative effort among
-              five team members, each bringing a unique set of skills and
-              responsibilities to the project. Our main objective was to create
-              a functional, aesthetically pleasing, and user-friendly website to
-              showcase Bahrain Polytechnic. The site includes various sections
-              such as the homepage, About Us, Academics, Contact, and Our Story,
-              designed to provide a comprehensive overview of the institution's
-              offerings and values.
-            </p>
+        <p>
+          Maintaining design consistency across all pages was another critical
+          challenge. With multiple team members working on different sections,
+          ensuring a unified look and feel required careful coordination. We
+          resolved this by creating a shared global CSS file for common styles,
+          complemented by individual CSS files for page-specific customizations.
+          This approach allowed us to achieve a harmonious design while
+          accommodating unique elements for each page.
+        </p>
 
-            <br />
+        <br />
 
-            <p>
-              We began by establishing a clear vision and a detailed plan for
-              the project. Each member was assigned specific tasks: one took the
-              lead on the overall design and layout, ensuring a cohesive visual
-              identity for the website. Another focused on structuring the HTML
-              to create a solid foundation, while a third member handled CSS
-              styling to bring the design to life. The fourth team member
-              integrated JavaScript functionality, adding interactivity and
-              enhancing user engagement. Lastly, the fifth member concentrated
-              on ensuring the website’s responsiveness and cross-browser
-              compatibility, a critical aspect for modern web development.
-            </p>
-            <p>
-              The project involved multiple stages, including brainstorming,
-              research, design, coding, testing, and refinement. As we
-              progressed, we maintained close communication and regularly
-              reviewed our work to ensure alignment with our objectives. The
-              final result was a fully functional website that highlights
-              Bahrain Polytechnic's mission, vision, academic programs, and
-              contact information, providing an engaging experience for users.
-            </p>
-          </div>
+        <p>
+          Time management was another hurdle, as balancing this project with
+          other academic and personal responsibilities proved demanding. We
+          tackled this by setting clear deadlines and holding regular meetings
+          to track progress and address any roadblocks. Effective communication
+          and teamwork were pivotal in overcoming these challenges and
+          completing the project successfully.
+        </p>
+      </div>
 
-          <!-- Challenges Faced -->
-          <div class="reflection-section">
-            <h2>Challenges Faced and How They Were Overcome</h2>
-            <p>
-              Like any significant project, our journey was not without its
-              challenges. One of the most pressing issues we faced was ensuring
-              the website’s responsiveness across a wide range of devices and
-              screen sizes. With users accessing websites from smartphones,
-              tablets, laptops, and desktops, it was essential to create a
-              layout that adapts seamlessly to different resolutions. To address
-              this, we employed CSS Flexbox and media queries, which allowed us
-              to create flexible and responsive designs. Rigorous testing on
-              multiple devices and browsers ensured a consistent user
-              experience.
-            </p>
+      <!-- Lessons Learned -->
+      <div class="reflection-section">
+        <h2>What We Learned About Building Websites</h2>
+        <p>
+          Working on this project was an invaluable learning experience that
+          deepened our understanding of web development. One of the most
+          significant lessons we learned was the importance of a well-organized
+          HTML structure. By structuring our HTML code logically and
+          semantically, we ensured that the website was not only accessible but
+          also optimized for search engines, enhancing its visibility and
+          usability.
+        </p>
 
-            <br />
+        <br />
 
-            <p>
-              Another challenge was integrating external resources such as
-              Google Fonts and Font Awesome. While these tools significantly
-              enhanced the visual appeal of the website, we initially struggled
-              with linking them correctly and ensuring that they did not
-              negatively impact performance. By carefully placing resource links
-              in the `head` section and verifying their integrity policies, we
-              successfully incorporated these elements while maintaining optimal
-              load times.
-            </p>
+        <p>
+          The project also provided us with hands-on experience in creating
+          responsive designs using CSS Flexbox and media queries. We realized
+          the critical role these tools play in modern web design, enabling us
+          to build layouts that adapt seamlessly to different devices and screen
+          orientations. This understanding will undoubtedly be beneficial in
+          future projects, as responsiveness is a fundamental expectation in
+          today's digital landscape.
+        </p>
 
-            <br />
+        <br />
 
-            <p>
-              Maintaining design consistency across all pages was another
-              critical challenge. With multiple team members working on
-              different sections, ensuring a unified look and feel required
-              careful coordination. We resolved this by creating a shared global
-              CSS file for common styles, complemented by individual CSS files
-              for page-specific customizations. This approach allowed us to
-              achieve a harmonious design while accommodating unique elements
-              for each page.
-            </p>
+        <p>
+          Another key takeaway was the value of external resources in enhancing
+          a website’s visual and functional appeal. Google Fonts and Font
+          Awesome allowed us to incorporate modern typography and icons,
+          elevating the overall aesthetic of the site. However, we also learned
+          to balance these enhancements with performance considerations,
+          ensuring that external resources did not compromise the user
+          experience.
+        </p>
 
-            <br />
+        <br />
 
-            <p>
-              Time management was another hurdle, as balancing this project with
-              other academic and personal responsibilities proved demanding. We
-              tackled this by setting clear deadlines and holding regular
-              meetings to track progress and address any roadblocks. Effective
-              communication and teamwork were pivotal in overcoming these
-              challenges and completing the project successfully.
-            </p>
-          </div>
+        <p>
+          Throughout the project, we gained a deeper appreciation for the
+          importance of user experience (UX). Every design and functionality
+          decision was made with the end user in mind, prioritizing simplicity,
+          ease of navigation, and visual appeal. This user-centric approach not
+          only improved the quality of our website but also taught us the
+          significance of empathy in design.
+        </p>
 
-          <!-- Lessons Learned -->
-          <div class="reflection-section">
-            <h2>What We Learned About Building Websites</h2>
-            <p>
-              Working on this project was an invaluable learning experience that
-              deepened our understanding of web development. One of the most
-              significant lessons we learned was the importance of a
-              well-organized HTML structure. By structuring our HTML code
-              logically and semantically, we ensured that the website was not
-              only accessible but also optimized for search engines, enhancing
-              its visibility and usability.
-            </p>
+        <br />
 
-            <br />
+        <p>
+          Beyond technical skills, this project underscored the value of
+          collaboration and communication in a team setting. Coordinating
+          efforts, sharing feedback, and resolving conflicts were integral to
+          our success. We learned to leverage each member's strengths while
+          supporting one another in areas of difficulty, fostering a productive
+          and harmonious working environment.
+        </p>
 
-            <p>
-              The project also provided us with hands-on experience in creating
-              responsive designs using CSS Flexbox and media queries. We
-              realized the critical role these tools play in modern web design,
-              enabling us to build layouts that adapt seamlessly to different
-              devices and screen orientations. This understanding will
-              undoubtedly be beneficial in future projects, as responsiveness is
-              a fundamental expectation in today's digital landscape.
-            </p>
+        <br />
 
-            <br />
-
-            <p>
-              Another key takeaway was the value of external resources in
-              enhancing a website’s visual and functional appeal. Google Fonts
-              and Font Awesome allowed us to incorporate modern typography and
-              icons, elevating the overall aesthetic of the site. However, we
-              also learned to balance these enhancements with performance
-              considerations, ensuring that external resources did not
-              compromise the user experience.
-            </p>
-
-            <br />
-
-            <p>
-              Throughout the project, we gained a deeper appreciation for the
-              importance of user experience (UX). Every design and functionality
-              decision was made with the end user in mind, prioritizing
-              simplicity, ease of navigation, and visual appeal. This
-              user-centric approach not only improved the quality of our website
-              but also taught us the significance of empathy in design.
-            </p>
-
-            <br />
-
-            <p>
-              Beyond technical skills, this project underscored the value of
-              collaboration and communication in a team setting. Coordinating
-              efforts, sharing feedback, and resolving conflicts were integral
-              to our success. We learned to leverage each member's strengths
-              while supporting one another in areas of difficulty, fostering a
-              productive and harmonious working environment.
-            </p>
-
-            <br />
-
-            <p>
-              Overall, this project was a comprehensive introduction to the
-              complexities and rewards of building a website. It refined our
-              skills in HTML, CSS, and JavaScript, while also teaching us the
-              importance of planning, testing, and iteration. Most importantly,
-              it reinforced the idea that web development is not just about
-              writing code; it is about creating meaningful digital experiences
-              that inform, engage, and inspire users.
-            </p>
-          </div>
-        </div>
-
-        <!-- Footer -->
-        <footer>
-          <div class="footer-content">
-            <div class="socials">
-              <a
-                href="https://www.linkedin.com/school/bahrain-polytechnic/posts/?feedView=all"
-              >
-                <i class="fa-brands fa-linkedin"></i
-              ></a>
-              <a href="https://www.instagram.com/bahrainpolytechnic/">
-                <i class="fa-brands fa-instagram"></i
-              ></a>
-              <a href="https://x.com/PolytechnicBH">
-                <i class="fa-brands fa-x-twitter"></i
-              ></a>
-              <a href="https://www.facebook.com/polytechnicbh">
-                <i class="fa-brands fa-facebook"></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="footer-bottom">&copy; 2024 Bahrain Polytechnic</div>
-        </footer>
-
-        <script src="../scripts/index.js"></script>
-      </body>
-    </html>
+        <p>
+          Overall, this project was a comprehensive introduction to the
+          complexities and rewards of building a website. It refined our skills
+          in HTML, CSS, and JavaScript, while also teaching us the importance of
+          planning, testing, and iteration. Most importantly, it reinforced the
+          idea that web development is not just about writing code; it is about
+          creating meaningful digital experiences that inform, engage, and
+          inspire users.
+        </p>
+      </div>
+    </div>
 
     <!-- Footer -->
     <footer>
