@@ -39,8 +39,8 @@
   height: var(--height);
   position: absolute;
   left: 100%;
-  animation: autoRun 10s linear infinite;
-  animation-delay: calc((10s / var(--quantity)) * (var(--position) * -1));
+  animation: autoRun 20s linear infinite;
+  animation-delay: calc((20s / var(--quantity)) * (var(--position) * -1));
   border-radius: 0.5rem;
   transition: transform 0.5s;
 }
