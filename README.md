@@ -1,4 +1,4 @@
-# [Bahrain Polytechnic Website](https://hasanali117.github.io/Bahrain-Polytechnic/index.html)
+# [Bahrain Polytechnic](https://hasanali117.github.io/Bahrain-Polytechnic/index.html)
 
 This project is a website for Bahrain Polytechnic University, created as part of the IT6012 - Web Fundamentals course. The website showcases various aspects of the university, including academics, faculty, facilities, and contact information.
 
@@ -22,8 +22,6 @@ The website provides information about Bahrain Polytechnic University, including
 
 You can view the live website on GitHub Pages: [Bahrain Polytechnic Website](https://hasanali117.github.io/Bahrain-Polytechnic/index.html)
 
-## Homepage Screenshot
-
 ## Features
 
 - Home page with an overview of the university
@@ -43,9 +41,6 @@ You can view the live website on GitHub Pages: [Bahrain Polytechnic Website](htt
 
 ```
 .
-├── .gitignore
-├── .vscode/
-│   └── settings.json
 ├── images/
 │   ├── academics/
 │   └── home/
