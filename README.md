@@ -58,7 +58,6 @@ You can view the live website on GitHub Pages: [Bahrain Polytechnic Website](htt
 └── styles/
     ├── about-us.css
     ├── academics.css
-    ├── admission.css
     ├── contact.css
     ├── form.css
     ├── home.css
