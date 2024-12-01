@@ -1,9 +1,10 @@
 /* -------- About us --------*/
-.about {
+.about h2 {
   text-align: left;
 }
 .about p {
   padding: 1rem 0;
+  text-align: left;
 }
 .about img {
   float: right;
