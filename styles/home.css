@@ -1,6 +1,5 @@
 /*-------- Navbar --------*/
 .logo {
-  /* color: #ff4545; */
   filter: brightness(0) saturate(100%) invert(39%) sepia(94%) saturate(7467%)
     hue-rotate(353deg) brightness(101%) contrast(101%);
 }
@@ -156,21 +155,30 @@
 .teacher-col p {
 }
 
-.teacher-col img {
+.teacher-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   height: 10rem;
   width: 10rem;
-  object-fit: cover;
+  background: center no-repeat;
+  background-size: cover;
   margin-bottom: 1rem;
-  border: 3px solid #f4f4f9;
-  transition: 0.5s;
+  transition: all 0.5s;
+  margin-left: 3rem;
 }
 
-.teacher-col img:hover {
-  border: 3px solid red;
+.teacher-card .card-content {
+  border-radius: 50%;
+  color: white;
+  background-color: rgb(255, 0, 0, 0.5);
+  font-size: 2rem;
 }
-.teacher-col img:hover ~ h3 {
+
+.teacher-col .teacher-card:hover ~ h3 {
   color: red;
+  transition: all 0.5s;
 }
 
 /* Testimonials */
