@@ -92,7 +92,6 @@ nav h2 {
     ),
     url("../images/register.jpg");
   height: 50vh;
-  /* background-color: #c62e2e; */
 }
 
 .nav-content {
@@ -186,8 +185,618 @@ footer {
   padding: 0.5rem;
 }
 
+/*-------- HOMEPAGE --------*/
+.logo-red {
+  filter: brightness(0) saturate(100%) invert(39%) sepia(94%) saturate(7467%)
+    hue-rotate(353deg) brightness(101%) contrast(101%);
+}
+.logo-red img {
+  filter: brightness(0) saturate(100%) invert(39%) sepia(94%) saturate(7467%)
+    hue-rotate(353deg) brightness(101%) contrast(101%);
+}
+
+.nav-links a::after {
+  background: red;
+}
+
+/*-------- Banner --------*/
+.banner {
+  height: 100vh;
+  color: white;
+  background: no-repeat center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/home/img-1.jpg");
+  background-size: cover;
+}
+.banner-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 75%;
+  text-align: center;
+}
+
+.banner-content h1 {
+  font-weight: 600;
+  font-size: 4rem;
+  margin: 1rem;
+  font-family: "Funnel Display", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.banner-content p {
+  margin: 1rem 0 2rem 0;
+  color: white;
+}
+
+.banner-content button {
+  margin: 2rem;
+}
+
+/*-------- Why Us --------*/
+
+.why-us-card {
+  background-size: cover;
+  background-position: center;
+  height: 27rem;
+  width: 22rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.card {
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.04);
+}
+
+.card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.card-content h3 {
+  color: white;
+}
+.card-content p {
+  font-weight: 300;
+  color: white;
+}
+.card:hover .card-content {
+  opacity: 1;
+}
+
+/*-------- Programmes --------*/
+
+.programmes a {
+  text-decoration: none;
+  color: black;
+}
+
+.program-col {
+  background-color: #f6d6d6;
+  border-radius: 0.5rem;
+  width: 20rem;
+  height: 17rem;
+  padding: 2rem;
+  transition: 0.5s;
+}
+
+.program-col:hover {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*-------- Facilities --------*/
+
+.facilities-col {
+  border-radius: 0.5rem;
+  width: 30rem;
+}
+
+.facilities-col h3 {
+  text-align: left;
+  padding: 0.5rem 0;
+}
+.facilities-col p {
+  text-align: left;
+  padding: 0.5rem 0;
+}
+
+.facilities-col img {
+  width: 100%;
+  height: 25rem;
+  border-radius: 0.5rem;
+}
+
+/*-------- Teachers --------*/
+
+.teacher-row {
+  justify-content: center;
+}
+
+.teacher-col {
+  border-radius: 0.5rem;
+  margin: 1rem 3rem;
+  width: 16rem;
+}
+
+.teacher-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
+  background: center no-repeat;
+  background-size: cover;
+  margin-bottom: 1rem;
+  transition: all 0.5s;
+  margin-left: 3rem;
+}
+
+.teacher-card .card-content {
+  border-radius: 50%;
+  color: white;
+  background-color: rgb(255, 0, 0, 0.5);
+  font-size: 2rem;
+}
+
+.teacher-col .teacher-card:hover ~ h3 {
+  color: red;
+  transition: all 0.5s;
+}
+
+/*-------- Testimonials --------*/
+.testimonial-col {
+  background-color: #f6d6d6;
+  width: 43%;
+  text-align: left;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+}
+.testimonial-col img {
+  border-radius: 100%;
+  height: 4rem;
+  width: 4rem;
+  margin: 1rem 2rem;
+}
+.testimonial-col p {
+  padding: 0;
+  font-style: italic;
+}
+.testimonial-col h3 {
+  text-align: left;
+  margin: 1.5rem auto;
+}
+
+.testimonial-col:hover {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*-------- Register --------*/
+.input-group {
+  margin-top: 1rem;
+}
+
+.input-group label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+.input-group input {
+  margin: 0.5rem auto;
+  width: 100%;
+  padding: 0.6rem 0;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  box-sizing: border-box;
+}
+.input-group input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+.submit-button {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  background-color: #ff4545;
+}
+.submit-button:hover {
+  background-color: #ee8989;
+  color: white;
+  text-decoration: none;
+}
+
+/* -------- ABOUT US --------*/
+.about h2 {
+  text-align: left;
+}
+.about p {
+  padding: 1rem 0;
+  text-align: left;
+}
+.about img {
+  float: right;
+  height: 20rem;
+  width: 30rem;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+  object-fit: cover;
+}
+/* -------- Vision Cards --------*/
+.vision {
+  padding: 10rem 0;
+}
+
+.vision-card {
+  background-color: transparent;
+  height: 30rem;
+  width: 28rem;
+  perspective: 1000px;
+}
+
+.vision-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.vision-card:hover .vision-card-inner {
+  transform: rotateY(180deg);
+}
+
+.vision-card-front,
+.vision-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.vision-card-front {
+  background: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(144, 15, 15, 0.6),
+      rgba(144, 15, 15, 0.6)
+    ),
+    url("../images/bg-2.JPG");
+}
+
+.vision-card-front h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+}
+
+.vision-card-back {
+  background-color: #c62e2e;
+  transform: rotateY(180deg);
+}
+
+.vision-card-back p {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.5;
+  padding: 5rem;
+  text-align: left;
+}
+
+/* -------- ACADEMICS --------*/
+.teaching {
+  text-align: right;
+}
+.teaching p {
+  padding: 1rem 0;
+}
+.teaching img {
+  float: left;
+  height: 20rem;
+  width: 30rem;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  object-fit: cover;
+}
+
+/* -------- Slider --------*/
+:root {
+  --width: 20rem;
+  --height: 20rem;
+  --quantity: 5;
+}
+
+.slider {
+  width: 100%;
+  height: var(--height);
+  overflow: hidden;
+}
+
+.slider .list {
+  display: flex;
+  width: 100%;
+  min-width: calc(var(--width) * var(--quantity));
+  position: relative;
+}
+
+.slider .list .item {
+  width: var(--width);
+  height: var(--height);
+  position: absolute;
+  left: 100%;
+  animation: autoRun 20s linear infinite;
+  animation-delay: calc((20s / var(--quantity)) * (var(--position) * -1));
+  border-radius: 0.5rem;
+  transition: transform 0.5s;
+}
+
+.slider .list .item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.slider .list .item h3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 1.3rem;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: height 0.5s;
+  border-radius: 0.5rem;
+}
+
+@keyframes autoRun {
+  from {
+    left: 100%;
+  }
+  to {
+    left: calc(var(--width) * -1);
+  }
+}
+
+.slider:hover .item {
+  animation-play-state: paused !important;
+}
+
+.slider .item:hover {
+  transform: scale(1.07);
+}
+
+/* -------- CONTACT US --------*/
+.map iframe {
+  width: 100%;
+  height: 30rem;
+}
+
+.sub-title {
+  margin-top: 0;
+}
+.contact-info {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-bottom: 4rem;
+  font-size: 1.5rem;
+}
+.contact-info i {
+  padding-right: 1.5rem;
+  font-size: 2rem;
+  width: 2rem;
+}
+
+#contactForm .input-group {
+  margin-top: 1.5rem;
+}
+#contactForm .input-group span {
+  color: red;
+  font-size: 1.2rem;
+}
+
+#contactForm .input-group label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1f2937;
+  text-align: left;
+}
+#contactForm .input-group input {
+  margin: 0.5rem auto;
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+#contactForm .input-group input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+#contactForm .input-group textarea {
+  margin: 0.5rem auto;
+  width: 100%;
+  height: 10rem;
+  padding: 0.6rem;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+  resize: none;
+}
+
+#contactForm .input-group textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+.submit-button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  background-color: #ed5757;
+}
+
+.submit-button:hover {
+  background-color: #ee8989;
+  color: white;
+  text-decoration: none;
+}
+
+/*-------- MAKING OF SITE --------*/
+.page {
+  margin: 2rem 0;
+}
+
+.page h3 {
+  margin: 5rem;
+  font-size: 2rem;
+}
+
+.page-content {
+  display: flex;
+  justify-content: space-between;
+}
+.page-content p {
+  max-width: 50%;
+  text-align: left;
+}
+.mockup {
+  width: 40%;
+  height: 30rem;
+  border-radius: 1rem;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #ff0000 #ffcccc;
+}
+
+.mockup::-webkit-scrollbar {
+  width: 10px;
+}
+
+.mockup::-webkit-scrollbar {
+  width: 10px;
+}
+
+.mockup::-webkit-scrollbar-track {
+  background: #ffcccc;
+  border-radius: 1rem;
+}
+
+.mockup::-webkit-scrollbar-thumb {
+  background: #ff0000;
+  border-radius: 1rem;
+}
+
+.mockup::-webkit-scrollbar-thumb:hover {
+  background: #cc0000;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*-------- OUR STORY --------*/
+.report-section p {
+  text-align: left;
+  line-height: 30px;
+}
+
+.report {
+  text-align: left;
+}
+.report p {
+  padding: 0;
+}
+.report h2 {
+  padding: 1rem 0;
+  text-align: center;
+}
+.reflection-section {
+  margin: 3rem 0;
+}
+.references .row {
+  flex-wrap: wrap;
+}
+
+#references-row a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s;
+}
+
+.img-ref {
+  margin: 0.5rem;
+  width: 5rem;
+}
+
+.img-ref img {
+  display: flex;
+  flex-direction: column;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  border: 3px solid #f4f4f9;
+  margin-bottom: 1rem;
+  transition: border 0.5s;
+  object-fit: cover;
+}
+
+.img-ref img:hover {
+  border: 3px solid red;
+}
+.img-ref img:hover ~ p {
+  color: red;
+}
+
 /* Small screens (mobile devices, 480px and up) */
 @media (max-width: 700px) {
+  /* global */
   nav {
     padding: 0;
   }
@@ -238,5 +847,103 @@ footer {
   .row {
     display: flex;
     flex-direction: column;
+  }
+
+  /* home */
+  .nav-links a::after {
+    background: white;
+  }
+
+  .banner h1 {
+    font-size: 2.2rem;
+  }
+  .banner-content {
+    padding: 1rem;
+  }
+
+  .why-us-card {
+    height: 20rem;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .card:hover {
+    transform: scale(1.01);
+  }
+
+  .program-col {
+    width: 80%;
+    height: 20rem;
+    margin-top: 2rem;
+  }
+
+  .facilities-col {
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  .teacher-col {
+    padding: 0;
+    margin-top: 3rem;
+    width: 100%;
+  }
+
+  .testimonial-col {
+    width: 80%;
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+  .testimonial-col img {
+    height: 4rem;
+    width: 4rem;
+    margin: 1rem 0;
+  }
+
+  /* About us */
+  .about {
+    text-align: left;
+  }
+
+  .about img {
+    margin: 3rem auto;
+    width: 100%;
+  }
+
+  .vision-card {
+    height: 25rem;
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  .vision-card-back p {
+    font-size: 1.1rem;
+    padding: 4rem;
+  }
+
+  /* Academic */
+  .teaching {
+    text-align: center;
+  }
+  .teaching p {
+    padding: 1rem 0;
+  }
+  .teaching img {
+    height: 20rem;
+    width: 100%;
+    margin: 3rem auto;
+  }
+
+  .slider-track {
+    animation: scroll 10s linear infinite;
+  }
+
+  /* Contact */
+  .contact-info {
+    padding-bottom: 2rem;
+    font-size: 0.9rem;
+  }
+  .contact-info i {
+    padding-right: 1rem;
+    font-size: 1.5rem;
   }
 }
