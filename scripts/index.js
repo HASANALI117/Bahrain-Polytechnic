@@ -68,7 +68,10 @@ const storedData = JSON.parse(localStorage.getItem("formData"));
 if (storedData) {
   // Display firstname in the navbar
   username.innerHTML =
-    `<i class="fa-solid fa-user"></i>` + storedData.firstName;
+    `<i class="fa-solid fa-user"></i>` +
+    storedData.firstName +
+    " " +
+    storedData.lastName;
 
   // Fill in the form fields
   if (contactFName) contactFName.value = storedData.firstName;
