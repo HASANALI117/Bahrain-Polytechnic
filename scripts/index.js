@@ -88,24 +88,26 @@ if (storedData) {
   // Form submission for sending email
   const contactForm = document.getElementById("contactForm");
 
-  contactForm.addEventListener("submit", function (e) {
-    e.preventDefault();
+  if (contactForm) {
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
 
-    // Capture form data
-    const firstName = document.getElementById("c-fname").value;
-    const lastName = document.getElementById("c-lname").value;
-    const subject = document.getElementById("subject").value;
-    const message = document.getElementById("message").value;
+      // Capture form data
+      const firstName = document.getElementById("c-fname").value;
+      const lastName = document.getElementById("c-lname").value;
+      const subject = document.getElementById("subject").value;
+      const message = document.getElementById("message").value;
 
-    // Encode the email fields
-    const emailBody = `Hi,\n\nMy name is ${firstName} ${lastName}.\n\n${message}\n\nThank you.`;
-    const mailtoLink = `mailto:info@polytechnic.bh?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(emailBody)}`;
+      // Encode the email fields
+      const emailBody = `Hi,\n\nMy name is ${firstName} ${lastName}.\n\n${message}\n\nThank you.`;
+      const mailtoLink = `mailto:info@polytechnic.bh?subject=${encodeURIComponent(
+        subject
+      )}&body=${encodeURIComponent(emailBody)}`;
 
-    // Redirect user to the mailto link
-    window.location.href = mailtoLink;
-  });
+      // Redirect user to the mailto link
+      window.location.href = mailtoLink;
+    });
+  }
 }
 
 // Image References
