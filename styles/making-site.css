@@ -1,0 +1,52 @@
+.page {
+  margin: 2rem 0;
+}
+
+.page h3 {
+  margin: 5rem;
+  font-size: 2rem;
+}
+
+.page-content {
+  display: flex;
+  justify-content: space-between;
+}
+.page-content p {
+  max-width: 50%;
+  text-align: left;
+}
+.mockup {
+  width: 40%;
+  height: 30rem;
+  border-radius: 1rem;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #ff0000 #ffcccc;
+}
+
+.mockup::-webkit-scrollbar {
+  width: 10px;
+}
+
+.mockup::-webkit-scrollbar {
+  width: 10px;
+}
+
+.mockup::-webkit-scrollbar-track {
+  background: #ffcccc;
+  border-radius: 1rem;
+}
+
+.mockup::-webkit-scrollbar-thumb {
+  background: #ff0000;
+  border-radius: 1rem;
+}
+
+.mockup::-webkit-scrollbar-thumb:hover {
+  background: #cc0000;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
