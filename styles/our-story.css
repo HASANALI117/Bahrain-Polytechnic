@@ -11,8 +11,11 @@
 }
 .report h2 {
   padding: 1rem 0;
+  text-align: center;
 }
-
+.reflection-section {
+  margin: 3rem 0;
+}
 .references .row {
   flex-wrap: wrap;
 }
