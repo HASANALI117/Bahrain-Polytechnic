@@ -12,3 +12,37 @@
 .report h2 {
   padding: 1rem 0;
 }
+
+.references .row {
+  flex-wrap: wrap;
+}
+
+#references-row a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s;
+}
+
+.img-ref {
+  margin: 0.5rem;
+  width: 5rem;
+}
+
+.img-ref img {
+  display: flex;
+  flex-direction: column;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  border: 3px solid #f4f4f9;
+  margin-bottom: 1rem;
+  transition: border 0.5s;
+  object-fit: cover;
+}
+
+.img-ref img:hover {
+  border: 3px solid red;
+}
+.img-ref img:hover ~ p {
+  color: red;
+}
